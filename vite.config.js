@@ -8,6 +8,7 @@ import NodeGlobalsPolyfillPlugin from '@esbuild-plugins/node-globals-polyfill'
 export default () => {
   return defineConfig({
     plugins: [react()],
+    base: '/Training_Task_1/',
     define: {
       global: 'globalThis'
     },
@@ -27,7 +28,7 @@ export default () => {
         }
       },
       postcss: {
-        plugins: [require('postcss-rtl')()]
+        plugins: []
       }
     },
     resolve: {

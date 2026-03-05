@@ -56,7 +56,7 @@ const container = document.getElementById('root')
 const root = createRoot(container)
 
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Provider store={store}>
       <Suspense fallback={<Spinner />}>
         <AbilityContext.Provider value={ability}>
@@ -67,7 +67,7 @@ root.render(
         </AbilityContext.Provider>
       </Suspense>
     </Provider>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 // If you want your app to work offline and load faster, you can change

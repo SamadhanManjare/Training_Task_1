@@ -10,7 +10,8 @@ export default () => {
     plugins: [react()],
     base: '/Training_Task_1/',
     define: {
-      global: 'globalThis'
+      global: 'globalThis',
+  'process.env': {}
     },
     server: {
       port: 3000,
